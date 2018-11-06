@@ -1,3 +1,7 @@
+Heroku link
+
+https://express-knex-mastery.herokuapp.com/
+
 # Express/Knex/Postgres: Servers & CRUD Pairing
 
 Today you will be working together with someone else in your cohort to produce an Express server with full CRUD functionality for 2 collections of resources that uses a PostgreSQL database. You can use the resource collections provided in this repo (beers and students) or create your own data sets. Your goal is to complete this by the end of the day, but if you do not finish that is ok (you can work it out with your partner to finish over the weekend or next week).
