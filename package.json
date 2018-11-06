@@ -1,0 +1,30 @@
+{
+  "name": "express-knex-mastery",
+  "version": "1.0.0",
+  "description": "Today you will be working together with someone else in your cohort to produce an Express server with full CRUD functionality for 2 collections of resources that uses a PostgreSQL database. You can use the resource collections provided in this repo (beers and students) or create your own data sets. Your goal is to complete this by the end of the day, but if you do not finish that is ok (you can work it out with your partner to finish over the weekend or next week).",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "knex": "^0.15.2",
+    "pg": "^7.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodyisaguirre/express-knex-mastery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jodyisaguirre/express-knex-mastery/issues"
+  },
+  "homepage": "https://github.com/jodyisaguirre/express-knex-mastery#readme"
+}
