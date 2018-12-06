@@ -1,8 +1,10 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('beer').del()
-    .then(function () {
+
+  return knex
+  .raw('DELETE FROM beer; ALTER SEQUENCE beer_id_seq RESTART WITH 11;')
+  .then(function() {
       // Inserts seed entries
       return knex('beer').insert([
         {
@@ -75,7 +77,7 @@ exports.seed = function(knex, Promise) {
           abv: 7,
           review: "New Belgium’s Lips of Faith program has been one of the driving forces behind sour beers being put in the hands of craft beer drinkers nationwide. This is the country’s 4th largest craft brewery, trailing only Yuengling, Boston Beer Co. and Sierra Nevada. Of those, (no offense, BBC) New Belgium is clearly the one identified with sour beer, and as such they’ve helped play tastemaker and introduced countless new drinkers to various tart styles. La Folie is probably the best of their widely available offerings, a moderately tart, almost surprisingly traditional oud bruin that actually falls on the lighter-intensity side of the spectrum in this particular tasting (there’s a LOT of assertive beer on the table). Pleasant, cherry-like fruitiness, a kiss of oak and good balance are what one should expect to find."
         },
-        
+
       ]);
     });
 };

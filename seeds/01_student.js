@@ -1,8 +1,9 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('student').del()
-    .then(function () {
+  return knex
+  .raw('DELETE FROM student; ALTER SEQUENCE student_id_seq RESTART WITH 14;')
+  .then(function() {
       // Inserts seed entries
       return knex('student').insert([
         {
